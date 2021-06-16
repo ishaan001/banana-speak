@@ -8,6 +8,10 @@ function textGenerator(text){
   return url+"?"+"text="+text;
 }
 
+function errorHandler(error){
+  console.log("Error check :"+error);
+
+}
 
 function clickHandler(){
   var inputVal = txtInput.value;
@@ -16,7 +20,7 @@ function clickHandler(){
   .then(json => {
     var translatedText = json.contents.translated;
     txtOutput.innerText = translatedText;
-  });
+  }).catch(errorHandler);
 
 };
 
