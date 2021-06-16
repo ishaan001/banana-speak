@@ -8,7 +8,7 @@
 
 }
 :root{
-  --primary-color: yellow;
+  --primary-color: #ffdd69;
 }
 body{
   text-align: center;
@@ -25,9 +25,17 @@ nav{
   font-family: 'barking_cat_demoregular';
 }
 
+
+
+.minion-img{
+  width: 20%;
+  min-width: 300px;
+  height: auto;
+}
+
 textarea{
   width: 60%;
-  height: 20vh;
+  height: 5vh;
   display: block;
   margin-top: 2rem;
   margin-left: auto;  
